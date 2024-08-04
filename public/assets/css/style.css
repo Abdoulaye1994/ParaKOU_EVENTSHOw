@@ -1,0 +1,3776 @@
+/*
+  Theme Name: TheEvent
+  Theme URL: https://bootstrapmade.com/theevent-conference-event-bootstrap-template/
+  Author: BootstrapMade.com
+  License: https://bootstrapmade.com/license/
+*/
+
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+
+body {
+  background: url(../img/main-content-background.jpg);
+  color: #2f3138;
+  font-family: "Open Sans", sans-serif;
+}
+
+a {
+  color: #f82249;
+  transition: 0.5s;
+}
+
+a:hover,
+a:active,
+a:focus {
+  color: #f8234a;
+  outline: none;
+  text-decoration: none;
+}
+
+p {
+  padding: 0;
+  margin: 0 0 30px 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  margin: 0 0 20px 0;
+  padding: 0;
+  color: #0e1b4d;
+}
+
+.main-page {
+  margin-top: 70px;
+}
+
+.wow {
+  visibility: hidden;
+}
+
+/* Prelaoder */
+
+#preloader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 999;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  background: #fff url("../img/preloader.svg") no-repeat center center;
+}
+
+/* Back to top button */
+
+.back-to-top {
+  position: fixed;
+  display: none;
+  background: #f82249;
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  border-radius: 50px;
+  right: 15px;
+  bottom: 15px;
+  transition: background 0.5s ease-in-out;
+}
+
+.back-to-top i {
+  font-size: 24px;
+  padding-top: 6px;
+}
+
+.back-to-top:focus {
+  background: #e0072f;
+  color: #fff;
+  outline: none;
+}
+
+.back-to-top:hover {
+  background: #e0072f;
+  color: #fff;
+}
+
+/* Sections Header
+--------------------------------*/
+
+.section-header {
+  margin-bottom: 60px;
+  position: relative;
+  padding-bottom: 20px;
+}
+
+.section-header::before {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 60px;
+  height: 5px;
+  background: #f82249;
+  bottom: 0;
+  left: calc(50% - 25px);
+}
+
+.section-header h2 {
+  font-size: 36px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.section-header p {
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  font-size: 18px;
+  font-weight: 500;
+  color: #9195a2;
+}
+
+.section-with-bg {
+  background-color: #f6f7fd;
+}
+
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+
+#header {
+  height: 90px;
+  padding: 25px 0;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  transition: all 0.5s;
+  z-index: 997;
+}
+
+#header.header-scrolled,
+#header.header-fixed {
+  background: rgba(6, 12, 34, 0.98);
+  height: 70px;
+  padding: 15px 0;
+  transition: all 0.5s;
+}
+
+#header #logo h1 {
+  font-size: 36px;
+  margin: 0;
+  padding: 6px 0;
+  line-height: 1;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+#header #logo h1 span {
+  color: #f82249;
+}
+
+#header #logo h1 a,
+#header #logo h1 a:hover {
+  color: #fff;
+}
+
+#header #logo img {
+  padding: 0;
+  margin: 0;
+  max-height: 40px;
+}
+
+/*--------------------------------------------------------------
+# Navigation Menu
+--------------------------------------------------------------*/
+
+/* Nav Menu Essentials */
+
+.nav-menu,
+.nav-menu * {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nav-menu ul {
+  position: absolute;
+  display: none;
+  top: 100%;
+  left: 0;
+  z-index: 99;
+}
+
+.nav-menu li {
+  position: relative;
+  white-space: nowrap;
+}
+
+.nav-menu > li {
+  float: left;
+}
+
+.nav-menu li:hover > ul,
+.nav-menu li.sfHover > ul {
+  display: block;
+}
+
+.nav-menu ul ul {
+  top: 0;
+  left: 100%;
+}
+
+.nav-menu ul li {
+  min-width: 180px;
+}
+
+/* Nav Menu Arrows */
+
+.sf-arrows .sf-with-ul {
+  padding-right: 30px;
+}
+
+.sf-arrows .sf-with-ul:after {
+  content: "\f107";
+  position: absolute;
+  right: 15px;
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+}
+
+.sf-arrows ul .sf-with-ul:after {
+  content: "\f105";
+}
+
+/* Nav Meu Container */
+
+#nav-menu-container {
+  float: right;
+  margin: 0;
+}
+
+/* Nav Meu Styling */
+
+.nav-menu a {
+  padding: 8px;
+  text-decoration: none;
+  display: inline-block;
+  color: rgba(202, 206, 221, 0.8);
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  outline: none;
+}
+
+.nav-menu .menu-active a,
+.nav-menu a:hover {
+  color: #fff;
+}
+
+.nav-menu > li {
+  margin-left: 8px;
+}
+
+.nav-menu > li > a:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #f82249;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.nav-menu a:hover:before,
+.nav-menu li:hover > a:before,
+.nav-menu .menu-active > a:before {
+  visibility: visible;
+  width: 100%;
+}
+
+.nav-menu li.buy-tickets a {
+  color: #fff;
+  background: #f82249;
+  padding: 7px 22px;
+  border-radius: 50px;
+  border: 2px solid #f82249;
+  transition: all ease-in-out 0.3s;
+  font-weight: 500;
+  margin-left: 8px;
+  margin-top: 2px;
+  line-height: 1;
+  font-size: 13px;
+}
+
+.nav-menu li.buy-tickets a:hover {
+  background: none;
+}
+
+.nav-menu li.buy-tickets:hover a:before,
+.nav-menu li.buy-tickets.menu-active a:before {
+  visibility: hidden;
+}
+
+.nav-menu ul {
+  margin: 4px 0 0 0;
+  padding: 10px;
+  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+  background: #fff;
+  border-radius: 3px;
+}
+
+.nav-menu ul li {
+  transition: 0.3s;
+}
+
+.nav-menu ul li a {
+  padding: 10px;
+  color: #060c22;
+  transition: 0.3s;
+  display: block;
+  font-size: 13px;
+  text-transform: none;
+  border-radius: 3px;
+}
+
+.nav-menu ul li:hover > a {
+  background: #f82249;
+  color: #fff;
+}
+
+.nav-menu ul ul {
+  margin: 0;
+}
+
+/* Mobile Nav Toggle */
+
+#mobile-nav-toggle {
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 999;
+  margin: 15px 15px 0 0;
+  border: 0;
+  background: none;
+  font-size: 24px;
+  display: none;
+  transition: all 0.4s;
+  outline: none;
+  cursor: pointer;
+}
+
+#mobile-nav-toggle i {
+  color: #fff;
+}
+
+/* Mobile Nav Styling */
+
+#mobile-nav {
+  position: fixed;
+  top: 0;
+  padding-top: 18px;
+  bottom: 0;
+  z-index: 998;
+  background: rgba(6, 12, 34, 0.9);
+  left: -260px;
+  width: 260px;
+  overflow-y: auto;
+  transition: 0.4s;
+}
+
+#mobile-nav ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+#mobile-nav ul li {
+  position: relative;
+}
+
+#mobile-nav ul li a {
+  color: #fff;
+  font-size: 17px;
+  overflow: hidden;
+  padding: 10px 22px 10px 15px;
+  position: relative;
+  text-decoration: none;
+  width: 100%;
+  display: block;
+  outline: none;
+}
+
+#mobile-nav ul li a:hover {
+  color: #f82249;
+}
+
+#mobile-nav ul li li {
+  padding-left: 30px;
+}
+
+#mobile-nav ul .menu-has-children i {
+  position: absolute;
+  right: 0;
+  z-index: 99;
+  padding: 15px;
+  cursor: pointer;
+  color: #fff;
+}
+
+#mobile-nav ul .menu-has-children i.fa-chevron-up {
+  color: #f82249;
+}
+
+#mobile-nav ul .menu-item-active {
+  color: #f82249;
+}
+
+#mobile-body-overly {
+  width: 100%;
+  height: 100%;
+  z-index: 997;
+  top: 0;
+  left: 0;
+  position: fixed;
+  background: rgba(6, 12, 34, 0.8);
+  display: none;
+}
+
+/* Mobile Nav body classes */
+
+body.mobile-nav-active {
+  overflow: hidden;
+}
+
+body.mobile-nav-active #mobile-nav {
+  left: 0;
+}
+
+body.mobile-nav-active #mobile-nav-toggle {
+  color: #fff;
+}
+
+/*--------------------------------------------------------------
+# Intro Section
+--------------------------------------------------------------*/
+
+
+
+
+  #introsse:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+
+
+
+
+  #introsse .intro-container {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    top: 90px;
+    right: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 15px;
+  }
+
+  #introsse h1 {
+    color: #fff;
+    font-family: "Raleway", sans-serif;
+    font-size: 56px;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+
+  #introsse h1 span {
+    color: #f82249;
+  }
+
+  #introsse p {
+    color: #ebebeb;
+    font-weight: 700;
+    font-size: 20px;
+  }
+
+  #introsse .play-btn {
+    width: 94px;
+    height: 94px;
+    background: radial-gradient(#f82249 50%,  52%);
+    border-radius: 50%;
+    display: block;
+    position: relative;
+    overflow: hidden;
+  }
+
+  #introsse .play-btn::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translateX(-40%) translateY(-50%);
+    transform: translateX(-40%) translateY(-50%);
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 15px solid #fff;
+    z-index: 100;
+    transition: all 400ms cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  }
+
+  #introsse .play-btn:before {
+    content: '';
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    -webkit-animation-delay: 0s;
+    animation-delay: 0s;
+    -webkit-animation: pulsate-btn 2s;
+    animation: pulsate-btn 2s;
+    -webkit-animation-direction: forwards;
+    animation-direction: forwards;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-timing-function: steps;
+    animation-timing-function: steps;
+    opacity: 1;
+    border-radius: 50%;
+    border: 2px solid rgba(163, 163, 163, 0.4);
+    top: -15%;
+    left: -15%;
+    background: rgba(198, 16, 0, 0);
+  }
+
+  #introsse .play-btn:hover::after {
+    border-left: 15px solid #f82249;
+    -webkit-transform: scale(20);
+    transform: scale(20);
+  }
+
+  #introsse .play-btn:hover::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translateX(-40%) translateY(-50%);
+    transform: translateX(-40%) translateY(-50%);
+    width: 0;
+    height: 0;
+    border: none;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 15px solid #fff;
+    z-index: 200;
+    -webkit-animation: none;
+    animation: none;
+    border-radius: 0;
+  }
+
+  #introsse .about-btn {
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 12px 32px;
+    border-radius: 50px;
+    transition: 0.5s;
+    line-height: 1;
+    margin: 10px;
+    color: #fff;
+    -webkit-animation-delay: 0.8s;
+    animation-delay: 0.8s;
+    border: 2px solid #f82249;
+  }
+
+  #introsse .about-btn:hover {
+    background: #f82249;
+    color: #fff;
+  }
+
+  @-webkit-keyframes pulsate-btn {
+    0% {
+      -webkit-transform: scale(0.6, 0.6);
+      transform: scale(0.6, 0.6);
+      opacity: 1;
+    }
+
+    100% {
+      -webkit-transform: scale(1, 1);
+      transform: scale(1, 1);
+      opacity: 0;
+    }
+  }
+
+
+
+@keyframes pulsate-btn {
+  0% {
+    -webkit-transform: scale(0.6, 0.6);
+    transform: scale(0.6, 0.6);
+    opacity: 1;
+  }
+
+  100% {
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+    opacity: 0;
+  }
+}
+
+
+
+#intro:before {
+  content: "";
+  background: rgba(6, 12, 34, 0.8);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+#intro .intro-container {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  top: 90px;
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  text-align: center;
+  padding: 0 15px;
+}
+
+#intro h1 {
+  color: #fff;
+  font-family: "Raleway", sans-serif;
+  font-size: 56px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+#intro h1 span {
+  color: #f82249;
+}
+
+#intro p {
+  color: #ebebeb;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+#intro .play-btn {
+  width: 94px;
+  height: 94px;
+  background: radial-gradient(#f82249 50%, rgba(101, 111, 150, 0.15) 52%);
+  border-radius: 50%;
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+
+#intro .play-btn::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translateX(-40%) translateY(-50%);
+  transform: translateX(-40%) translateY(-50%);
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 15px solid #fff;
+  z-index: 100;
+  transition: all 400ms cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+#intro .play-btn:before {
+  content: '';
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+  -webkit-animation: pulsate-btn 2s;
+  animation: pulsate-btn 2s;
+  -webkit-animation-direction: forwards;
+  animation-direction: forwards;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-timing-function: steps;
+  animation-timing-function: steps;
+  opacity: 1;
+  border-radius: 50%;
+  border: 2px solid rgba(163, 163, 163, 0.4);
+  top: -15%;
+  left: -15%;
+  background: rgba(198, 16, 0, 0);
+}
+
+#intro .play-btn:hover::after {
+  border-left: 15px solid #f82249;
+  -webkit-transform: scale(20);
+  transform: scale(20);
+}
+
+#intro .play-btn:hover::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translateX(-40%) translateY(-50%);
+  transform: translateX(-40%) translateY(-50%);
+  width: 0;
+  height: 0;
+  border: none;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 15px solid #fff;
+  z-index: 200;
+  -webkit-animation: none;
+  animation: none;
+  border-radius: 0;
+}
+
+#intro .about-btn {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 12px 32px;
+  border-radius: 50px;
+  transition: 0.5s;
+  line-height: 1;
+  margin: 10px;
+  color: #fff;
+  -webkit-animation-delay: 0.8s;
+  animation-delay: 0.8s;
+  border: 2px solid #f82249;
+}
+
+#intro .about-btn:hover {
+  background: #f82249;
+  color: #fff;
+}
+
+@-webkit-keyframes pulsate-btn {
+  0% {
+    -webkit-transform: scale(0.6, 0.6);
+    transform: scale(0.6, 0.6);
+    opacity: 1;
+  }
+
+  100% {
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+    opacity: 0;
+  }
+}
+
+
+
+#introsse {
+    width: 100%;
+    height: 100vh;
+    background: url(../img/gallery/parakou4-1-768x512.jpg) top center;
+    background-size: cover;
+    overflow: hidden;
+    position: relative;
+  }
+
+
+
+
+#intro {
+    width: 100%;
+    height: 100vh;
+    background: url(../img/cover.jpg) top center;
+    background-size: cover;
+    overflow: hidden;
+    position: relative;
+  }
+
+
+
+  #intro:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+
+  #intro .intro-container {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    top: 90px;
+    right: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 15px;
+  }
+
+  #intro h1 {
+    color: #fff;
+    font-family: "Raleway", sans-serif;
+    font-size: 56px;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+
+  #intro h1 span {
+    color: #f82249;
+  }
+
+  #intro p {
+    color: #ebebeb;
+    font-weight: 700;
+    font-size: 20px;
+  }
+
+  #intro .play-btn {
+    width: 94px;
+    height: 94px;
+    background: radial-gradient(#f82249 50%, rgba(101, 111, 150, 0.15) 52%);
+    border-radius: 50%;
+    display: block;
+    position: relative;
+    overflow: hidden;
+  }
+
+  #intro .play-btn::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translateX(-40%) translateY(-50%);
+    transform: translateX(-40%) translateY(-50%);
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 15px solid #fff;
+    z-index: 100;
+    transition: all 400ms cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  }
+
+  #intro .play-btn:before {
+    content: '';
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    -webkit-animation-delay: 0s;
+    animation-delay: 0s;
+    -webkit-animation: pulsate-btn 2s;
+    animation: pulsate-btn 2s;
+    -webkit-animation-direction: forwards;
+    animation-direction: forwards;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-timing-function: steps;
+    animation-timing-function: steps;
+    opacity: 1;
+    border-radius: 50%;
+    border: 2px solid rgba(163, 163, 163, 0.4);
+    top: -15%;
+    left: -15%;
+    background: rgba(198, 16, 0, 0);
+  }
+
+  #intro .play-btn:hover::after {
+    border-left: 15px solid #f82249;
+    -webkit-transform: scale(20);
+    transform: scale(20);
+  }
+
+  #intro .play-btn:hover::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translateX(-40%) translateY(-50%);
+    transform: translateX(-40%) translateY(-50%);
+    width: 0;
+    height: 0;
+    border: none;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 15px solid #fff;
+    z-index: 200;
+    -webkit-animation: none;
+    animation: none;
+    border-radius: 0;
+  }
+
+  #intro .about-btn {
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 12px 32px;
+    border-radius: 50px;
+    transition: 0.5s;
+    line-height: 1;
+    margin: 10px;
+    color: #fff;
+    -webkit-animation-delay: 0.8s;
+    animation-delay: 0.8s;
+    border: 2px solid #f82249;
+  }
+
+  #intro .about-btn:hover {
+    background: #f82249;
+    color: #fff;
+  }
+
+  @-webkit-keyframes pulsate-btn {
+    0% {
+      -webkit-transform: scale(0.6, 0.6);
+      transform: scale(0.6, 0.6);
+      opacity: 1;
+    }
+
+    100% {
+      -webkit-transform: scale(1, 1);
+      transform: scale(1, 1);
+      opacity: 0;
+    }
+  }
+
+
+
+@keyframes pulsate-btn {
+  0% {
+    -webkit-transform: scale(0.6, 0.6);
+    transform: scale(0.6, 0.6);
+    opacity: 1;
+  }
+
+  100% {
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+    opacity: 0;
+  }
+}
+
+/*--------------------------------------------------------------
+# About Section
+--------------------------------------------------------------*/
+
+#about {
+  background: url("../img/about-bg.jpg");
+  background-size: cover;
+  overflow: hidden;
+  position: relative;
+  color: #fff;
+  padding: 60px 0 40px 0;
+}
+
+#about:before {
+  content: "";
+  background: rgba(13, 20, 41, 0.8);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+#about h2 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+#about h3 {
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+#about p {
+  font-size: 14px;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+/*--------------------------------------------------------------
+# Speakers Section
+--------------------------------------------------------------*/
+
+#speakers {
+  padding: 60px 0 30px 0;
+}
+
+#speakers .speaker {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+
+#speakers .speaker .details {
+  background: rgba(6, 12, 34, 0.76);
+  position: absolute;
+  left: 0;
+  bottom: -30px;
+  right: 0;
+  text-align: center;
+  padding-top: 10px;
+  transition: all 300ms cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+#speakers .speaker .details h3 {
+  color: #fff;
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+#speakers .speaker .details p {
+  color: #fff;
+  font-size: 15px;
+  margin-bottom: 10px;
+  font-style: italic;
+}
+
+#speakers .speaker .details .social {
+  height: 30px;
+}
+
+#speakers .speaker .details a {
+  color: #fff;
+}
+
+#speakers .speaker .details a:hover {
+  color: #f82249;
+}
+
+#speakers .speaker:hover .details {
+  bottom: 0;
+}
+
+#speakers-details {
+  padding: 60px 0;
+}
+
+#speakers-details .details h2 {
+  color: #112363;
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+#speakers-details .details .social {
+  margin-bottom: 15px;
+}
+
+#speakers-details .details .social a {
+  background: #e9edfb;
+  color: #112363;
+  line-height: 1;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  padding-top: 9px;
+}
+
+#speakers-details .details .social a:hover {
+  background: #f82249;
+  color: #fff;
+}
+
+#speakers-details .details .social a i {
+  font-size: 18px;
+}
+
+#speakers-details .details p {
+  color: #112363;
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+/*--------------------------------------------------------------
+# Schedule Section
+--------------------------------------------------------------*/
+
+#schedule {
+  padding: 60px 0 60px 0;
+}
+
+#schedule .nav-tabs {
+  text-align: center;
+  margin: auto;
+  display: block;
+  border-bottom: 0;
+  margin-bottom: 30px;
+}
+
+#schedule .nav-tabs li {
+  display: inline-block;
+  margin-bottom: 0;
+}
+
+#schedule .nav-tabs a {
+  border: none;
+  border-radius: 50px;
+  font-weight: 600;
+  background-color: #0e1b4d;
+  color: #fff;
+  padding: 10px 100px;
+}
+
+#schedule .nav-tabs a.active {
+  background-color: #f82249;
+  color: #fff;
+}
+
+#schedule .sub-heading {
+  text-align: center;
+  font-size: 18px;
+  font-style: italic;
+  margin: 0 auto 30px auto;
+}
+
+#schedule .tab-pane {
+  transition: ease-in-out .2s;
+}
+
+#schedule .schedule-item {
+  border-bottom: 1px solid #cad4f6;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  transition: background-color ease-in-out 0.3s;
+}
+
+#schedule .schedule-item:hover {
+  background-color: #fff;
+}
+
+#schedule .schedule-item time {
+  padding-bottom: 5px;
+  display: inline-block;
+}
+
+#schedule .schedule-item .speaker {
+  width: 60px;
+  height: 60px;
+  overflow: hidden;
+  border-radius: 50%;
+  float: left;
+  margin: 0 10px 10px 0;
+}
+
+#schedule .schedule-item .speaker img {
+  height: 100%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  margin-left: 50%;
+  transition: all ease-in-out 0.3s;
+}
+
+#schedule .schedule-item h4 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+#schedule .schedule-item h4 span {
+  font-style: italic;
+  color: #19328e;
+  font-weight: normal;
+  font-size: 16px;
+}
+
+#schedule .schedule-item p {
+  font-style: italic;
+  color: #152b79;
+  margin-bottom: 0;
+}
+
+/*--------------------------------------------------------------
+# Venue Section
+--------------------------------------------------------------*/
+
+#venue {
+  padding: 60px 0;
+}
+
+#venue .container-fluid {
+  margin-bottom: 3px;
+}
+
+#venue .venue-map iframe {
+  width: 100%;
+  height: 100%;
+  min-height: 300px;
+}
+
+#venue .venue-info {
+  background: url("../img/venue-info-bg.jpg") top center no-repeat;
+  background-size: cover;
+  position: relative;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+#venue .venue-info:before {
+  content: "";
+  background: rgba(13, 20, 41, 0.8);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+#venue .venue-info h3 {
+  font-size: 36px;
+  font-weight: 700;
+  color: #fff;
+}
+
+#venue .venue-info p {
+  color: #fff;
+  margin-bottom: 0;
+}
+
+#venue .venue-gallery-container {
+  padding-right: 12px;
+}
+
+#venue .venue-gallery {
+  overflow: hidden;
+  border-right: 3px solid #fff;
+  border-bottom: 3px solid #fff;
+}
+
+#venue .venue-gallery img {
+  transition: all ease-in-out 0.4s;
+}
+
+#venue .venue-gallery:hover img {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+/*--------------------------------------------------------------
+# Hotels Section
+--------------------------------------------------------------*/
+
+#hotels {
+  padding: 60px 0;
+}
+
+#hotels .hotel {
+  border: 1px solid #e0e5fa;
+  background: #fff;
+  margin-bottom: 30px;
+}
+
+#hotels .hotel:hover .hotel-img img {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+#hotels .hotel-img {
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+
+#hotels .hotel-img img {
+  transition: 0.3s ease-in-out;
+}
+
+#hotels h3 {
+  font-weight: 600;
+  font-size: 20px;
+  margin-bottom: 5px;
+  padding: 0 20px;
+}
+
+#hotels a {
+  color: #152b79;
+}
+
+#hotels a:hover {
+  color: #f82249;
+}
+
+#hotels .stars {
+  padding: 0 20px;
+  margin-bottom: 5px;
+}
+
+#hotels .stars i {
+  color: #ffc31d;
+}
+
+#hotels p {
+  padding: 0 20px;
+  margin-bottom: 20px;
+  color: #060c22;
+  font-style: italic;
+  font-size: 15px;
+}
+
+/*--------------------------------------------------------------
+# Gallery Section
+--------------------------------------------------------------*/
+
+#gallery {
+  padding: 60px;
+  overflow: hidden;
+}
+
+#gallery .owl-nav,
+#gallery .owl-dots {
+  margin-top: 25px;
+  text-align: center;
+}
+
+#gallery .owl-item {
+  border-left: 2px solid #fff;
+  border-right: 2px solid #fff;
+}
+
+#gallery .owl-dot {
+  display: inline-block;
+  margin: 0 5px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #ddd;
+}
+
+#gallery .owl-dot.active {
+  background-color: #f82249;
+}
+
+#gallery .gallery-carousel .owl-stage-outer {
+  overflow: visible;
+}
+
+#gallery .gallery-carousel .center {
+  border: 6px solid #f82249;
+  margin: -10px;
+  box-sizing: content-box;
+  padding: 4px;
+  background: #fff;
+  z-index: 1;
+}
+
+/*--------------------------------------------------------------
+# Sponsors Section
+--------------------------------------------------------------*/
+
+#sponsors {
+  padding: 60px 0;
+}
+
+#sponsors .sponsors-wrap {
+  border-top: 1px solid #e0e5fa;
+  border-left: 1px solid #e0e5fa;
+  margin-bottom: 30px;
+}
+
+#sponsors .sponsor-logo {
+  padding: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-right: 1px solid #e0e5fa;
+  border-bottom: 1px solid #e0e5fa;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.5);
+  height: 160px;
+}
+
+#sponsors .sponsor-logo:hover img {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+#sponsors img {
+  transition: all 0.4s ease-in-out;
+}
+
+/*--------------------------------------------------------------
+# F.A.Q Section
+--------------------------------------------------------------*/
+
+#faq {
+  padding: 60px 0;
+}
+
+#faq #faq-list {
+  padding: 0;
+  list-style: none;
+}
+
+#faq #faq-list li {
+  border-bottom: 1px solid #ddd;
+}
+
+#faq #faq-list a {
+  padding: 18px 0;
+  display: block;
+  position: relative;
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+  padding-right: 20px;
+}
+
+#faq #faq-list i {
+  font-size: 24px;
+  position: absolute;
+  right: 0;
+  top: 16px;
+}
+
+#faq #faq-list p {
+  margin-bottom: 20px;
+}
+
+#faq #faq-list a.collapse {
+  color: #f82249;
+}
+
+#faq #faq-list a.collapsed {
+  color: #000;
+}
+
+#faq #faq-list a.collapsed i::before {
+  content: "\f055" !important;
+}
+
+/*--------------------------------------------------------------
+# Subscribe Section
+--------------------------------------------------------------*/
+
+#subscribe {
+
+  background: url(../img/subscribe-bg.jpg) center center no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  position: relative;
+}
+
+#subscribe:before {
+  content: "";
+  background: rgba(6, 12, 34, 0.6);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+#subscribe .section-header h2,
+#subscribe p {
+  color: #fff;
+}
+
+#subscribe input {
+  background: #fff;
+  color: #060c22;
+  border: 0;
+  outline: none;
+  margin: 0;
+  padding: 5px 10px;
+  border-radius: 50px;
+  font-size: 14px;
+}
+
+#subscribe button {
+  border: 0;
+  padding: 9px 25px;
+  cursor: pointer;
+  background: #f82249;
+  color: #fff;
+  transition: all 0.3s ease;
+  outline: none;
+  font-size: 14px;
+  border-radius: 50px;
+}
+
+#subscribe button:hover {
+  background: #e0072f;
+}
+
+/*--------------------------------------------------------------
+# Buy Tickets Section
+--------------------------------------------------------------*/
+
+#buy-tickets {
+  padding: 60px 0;
+}
+
+#buy-tickets .card {
+  border: none;
+  border-radius: 5px;
+  transition: all  0.3s ease-in-out;
+  box-shadow: 0 10px 25px 0 rgba(6, 12, 34, 0.1);
+}
+
+#buy-tickets .card:hover {
+  box-shadow: 0 10px 35px 0 rgba(6, 12, 34, 0.2);
+}
+
+#buy-tickets .card hr {
+  margin: 25px 0;
+}
+
+#buy-tickets .card .card-title {
+  margin: 10px 0;
+  font-size: 14px;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+
+#buy-tickets .card .card-price {
+  font-size: 48px;
+  margin: 0;
+}
+
+#buy-tickets .card ul li {
+  margin-bottom: 20px;
+}
+
+#buy-tickets .card .text-muted {
+  opacity: 0.7;
+}
+
+#buy-tickets .card .btn {
+  font-size: 15px;
+  border-radius: 50px;
+  padding: 10px 40px;
+  transition: all 0.2s;
+  background-color: #f82249;
+  border: 0;
+  color: #fff;
+}
+
+#buy-tickets .card .btn:hover {
+  background-color: #e0072f;
+}
+
+#buy-tickets #buy-ticket-modal input,
+#buy-tickets #buy-ticket-modal select {
+  border-radius: 0;
+}
+
+#buy-tickets #buy-ticket-modal .btn {
+  font-size: 15px;
+  border-radius: 50px;
+  padding: 10px 40px;
+  transition: all 0.2s;
+  background-color: #f82249;
+  border: 0;
+  color: #fff;
+}
+
+#buy-tickets #buy-ticket-modal .btn:hover {
+  background-color: #e0072f;
+}
+
+/*--------------------------------------------------------------
+# Contact Section
+--------------------------------------------------------------*/
+
+#contact {
+  padding: 60px 0;
+}
+
+#contact .contact-info {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+#contact .contact-info i {
+  font-size: 48px;
+  display: inline-block;
+  margin-bottom: 10px;
+  color: #f82249;
+}
+
+#contact .contact-info address,
+#contact .contact-info p {
+  margin-bottom: 0;
+  color: #112363;
+}
+
+#contact .contact-info h3 {
+  font-size: 18px;
+  margin-bottom: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #112363;
+}
+
+#contact .contact-info a {
+  color: #4869df;
+}
+
+#contact .contact-info a:hover {
+  color: #f82249;
+}
+
+#contact .contact-address,
+#contact .contact-phone,
+#contact .contact-email {
+  margin-bottom: 20px;
+}
+
+#contact .form #sendmessage {
+  color: #f82249;
+  border: 1px solid #f82249;
+  display: none;
+  text-align: center;
+  padding: 15px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+#contact .form #errormessage {
+  color: red;
+  display: none;
+  border: 1px solid red;
+  text-align: center;
+  padding: 15px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+#contact .form #sendmessage.show,
+#contact .form #errormessage.show,
+#contact .form .show {
+  display: block;
+}
+
+#contact .form .validation {
+  color: red;
+  display: none;
+  margin: 0 0 20px;
+  font-weight: 400;
+  font-size: 13px;
+}
+
+#contact .form input,
+#contact .form textarea {
+  padding: 10px 14px;
+  border-radius: 0;
+  box-shadow: none;
+  font-size: 15px;
+}
+
+#contact .form button[type="submit"] {
+  background: #f82249;
+  border: 0;
+  padding: 10px 40px;
+  color: #fff;
+  transition: 0.4s;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+#contact .form button[type="submit"]:hover {
+  background: #e0072f;
+}
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+
+#footer {
+  background: #101522;
+  padding: 0 0 25px 0;
+  color: #eee;
+  font-size: 14px;
+}
+
+#footer .footer-top {
+  background: #040919;
+  padding: 60px 0 30px 0;
+}
+
+#footer .footer-top .footer-info {
+  margin-bottom: 30px;
+}
+
+#footer .footer-top .footer-info h3 {
+  font-size: 26px;
+  margin: 0 0 20px 0;
+  padding: 2px 0 2px 0;
+  line-height: 1;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  color: #fff;
+}
+
+#footer .footer-top .footer-info img {
+  height: 40px;
+  margin-bottom: 10px;
+}
+
+#footer .footer-top .footer-info p {
+  font-size: 14px;
+  line-height: 24px;
+  margin-bottom: 0;
+  font-family: "Raleway", sans-serif;
+  color: #fff;
+}
+
+#footer .footer-top .social-links a {
+  font-size: 18px;
+  display: inline-block;
+  background: #222636;
+  color: #eee;
+  line-height: 1;
+  padding: 8px 0;
+  margin-right: 4px;
+  border-radius: 50%;
+  text-align: center;
+  width: 36px;
+  height: 36px;
+  transition: 0.3s;
+}
+
+#footer .footer-top .social-links a:hover {
+  background: #f82249;
+  color: #fff;
+}
+
+#footer .footer-top h4 {
+  font-size: 14px;
+  font-weight: bold;
+  color: #fff;
+  text-transform: uppercase;
+  position: relative;
+  padding-bottom: 12px;
+  border-bottom: 2px solid #f82249;
+}
+
+#footer .footer-top .footer-links {
+  margin-bottom: 30px;
+}
+
+#footer .footer-top .footer-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#footer .footer-top .footer-links ul i {
+  padding-right: 5px;
+  color: #f82249;
+  font-size: 18px;
+}
+
+#footer .footer-top .footer-links ul li {
+  border-bottom: 1px solid #262c44;
+  padding: 10px 0;
+}
+
+#footer .footer-top .footer-links ul li:first-child {
+  padding-top: 0;
+}
+
+#footer .footer-top .footer-links ul a {
+  color: #eee;
+}
+
+#footer .footer-top .footer-links ul a:hover {
+  color: #f82249;
+}
+
+#footer .footer-top .footer-contact {
+  margin-bottom: 30px;
+}
+
+#footer .footer-top .footer-contact p {
+  line-height: 26px;
+}
+
+#footer .footer-top .footer-newsletter {
+  margin-bottom: 30px;
+}
+
+#footer .footer-top .footer-newsletter input[type="email"] {
+  border: 0;
+  padding: 6px 8px;
+  width: 65%;
+}
+
+#footer .footer-top .footer-newsletter input[type="submit"] {
+  background: #f82249;
+  border: 0;
+  width: 35%;
+  padding: 6px 0;
+  text-align: center;
+  color: #fff;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+#footer .footer-top .footer-newsletter input[type="submit"]:hover {
+  background: #e0072f;
+}
+
+#footer .copyright {
+  text-align: center;
+  padding-top: 30px;
+}
+
+#footer .credits {
+  text-align: center;
+  font-size: 13px;
+  color: #ddd;
+}
+
+/*--------------------------------------------------------------
+# Responsive Media Queries
+--------------------------------------------------------------*/
+
+@media (min-width: 767px) {
+  #subscribe input {
+    min-width: 400px;
+  }
+}
+
+@media (min-width: 768px) {
+  #contact .contact-address,
+  #contact .contact-phone,
+  #contact .contact-email {
+    padding: 20px 0;
+  }
+
+  #contact .contact-phone {
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+  }
+}
+
+@media (min-width: 991px) {
+  #schedule .sub-heading {
+    width: 75%;
+  }
+}
+
+@media (min-width: 1024px) {
+  #intro {
+    background-attachment: fixed;
+  }
+
+  #about {
+    background-attachment: fixed;
+  }
+
+  #subscribe {
+    background-attachment: fixed;
+  }
+}
+
+@media (max-width: 1199px) {
+  #header .container {
+    max-width: 100%;
+  }
+
+  .nav-menu a {
+    padding: 8px 4px;
+  }
+}
+
+@media (max-width: 991px) {
+  #header {
+    background: rgba(6, 12, 34, 0.98);
+    height: 70px;
+    padding: 15px 0;
+    transition: all 0.5s;
+  }
+
+  #nav-menu-container {
+    display: none;
+  }
+
+  #mobile-nav-toggle {
+    display: inline;
+  }
+
+  #intro .intro-container {
+    top: 70px;
+  }
+
+  #intro h1 {
+    font-size: 34px;
+  }
+
+  #intro p {
+    font-size: 16px;
+  }
+
+  #schedule .nav-tabs a {
+    padding: 8px 60px;
+  }
+}
+
+@media (max-width: 768px) {
+  .back-to-top {
+    bottom: 15px;
+  }
+
+  #faq #faq-list a {
+    font-size: 18px;
+  }
+
+  #faq #faq-list i {
+    top: 13px;
+  }
+}
+
+@media (max-width: 767px) {
+  #schedule .nav-tabs a {
+    padding: 8px 50px;
+  }
+}
+
+@media (max-width: 574px) {
+  #venue .venue-info h3 {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  #schedule .nav-tabs a {
+    padding: 8px 30px;
+  }
+}
+
+@media (max-width: 460px) {
+  #subscribe button {
+    margin-top: 10px;
+  }
+}
+
+
+
+
+/*---------------------------------------
+  ABOUT              
+-----------------------------------------*/
+.about-section {
+    background-image: url('../images/edward-unsplash-blur.jpg');
+    background-color: #704010;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  
+  .about-image {
+    border-radius: var(--border-radius-medium);
+    display: block;
+  }
+  
+  .about-text-wrap {
+    position: relative;
+  }
+  
+  .about-text-icon {
+    background: var(--primary-color);
+    border-radius: 100%;
+    font-size: var(--h3-font-size);
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+  }
+  
+  .about-text-info {
+    backdrop-filter: blur(5px) saturate(180%);
+    -webkit-backdrop-filter: blur(5px) saturate(180%);
+    background-color: rgba(255, 255, 255, 0.75);
+    border-radius: var(--border-radius-medium);
+    border: 1px solid rgba(209, 213, 219, 0.3);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: 20px;
+    padding: 35px;
+  }
+  
+  
+  /*---------------------------------------
+    TICKET               
+  -----------------------------------------*/
+  .ticket-section {
+    background-image: url('../images/nicholas-green-unsplash-blur.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    padding-top: 130px;
+  }
+  
+  .ticket-form {
+    background: var(--white-color);
+    border-radius: var(--border-radius-medium);
+    padding: 50px;
+  }
+  
+  .ticket-form .form-check {
+    position: relative;
+    min-height: 52px;
+    padding-left: 35px;
+  }
+  
+  .ticket-form .form-check .form-check-label {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 12px;
+    margin-left: 35px;
+    width: 100%;
+    height: 100%;
+  }
+
+
+
+
+/* Start Blog Area css
+============================================================================================ */
+/* line 5, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog.scss */
+.latest-blog-area .area-heading {
+    margin-bottom: 70px;
+  }
+
+  /* line 10, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog.scss */
+  .blog_area a {
+    color: #666666 !important;
+    text-decoration: none;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+
+  /* line 14, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog.scss */
+  .blog_area a:hover, .blog_area a :hover {
+    background: -webkit-linear-gradient(131deg, #009DFF 0%, #009DFF 99%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-decoration: none;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+
+  /* line 24, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog.scss */
+  .single-blog {
+    overflow: hidden;
+    margin-bottom: 30px;
+  }
+
+  /* line 28, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog.scss */
+  .single-blog:hover {
+    box-shadow: 0px 10px 20px 0px rgba(42, 34, 123, 0.1);
+  }
+
+  /* line 32, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog.scss */
+  .single-blog .thumb {
+    overflow: hidden;
+    position: relative;
+  }
+
+  /* line 36, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog.scss */
+  .single-blog .thumb:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 0;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+
+  /* line 49, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog.scss */
+  .single-blog h4 {
+    border-bottom: 1px solid #dfdfdf;
+    padding-bottom: 34px;
+    margin-bottom: 25px;
+  }
+
+  /* line 56, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog.scss */
+  .single-blog a {
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  /* line 66, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog.scss */
+  .single-blog .date {
+    color: #666666;
+    text-align: left;
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 300;
+  }
+
+  /* line 74, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog.scss */
+  .single-blog .tag {
+    text-align: left;
+    display: inline-block;
+    float: left;
+    font-size: 13px;
+    font-weight: 300;
+    margin-right: 22px;
+    position: relative;
+  }
+
+  /* line 84, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog.scss */
+  .single-blog .tag:after {
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 10px;
+    background: #acacac;
+    right: -12px;
+    top: 7px;
+  }
+
+  @media (max-width: 1199px) {
+    /* line 74, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog.scss */
+    .single-blog .tag {
+      margin-right: 8px;
+    }
+    /* line 98, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog.scss */
+    .single-blog .tag:after {
+      display: none;
+    }
+  }
+
+  /* line 104, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog.scss */
+  .single-blog .likes {
+    margin-right: 16px;
+  }
+
+  @media (max-width: 800px) {
+    /* line 24, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog.scss */
+    .single-blog {
+      margin-bottom: 30px;
+    }
+  }
+
+  /* line 112, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog.scss */
+  .single-blog .single-blog-content {
+    padding: 30px;
+  }
+
+  /* line 116, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog.scss */
+  .single-blog .single-blog-content .meta-bottom p {
+    font-size: 13px;
+    font-weight: 300;
+  }
+
+  /* line 121, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog.scss */
+  .single-blog .single-blog-content .meta-bottom i {
+    color: #fdcb9e;
+    font-size: 13px;
+    margin-right: 7px;
+  }
+
+  @media (max-width: 1199px) {
+    /* line 112, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog.scss */
+    .single-blog .single-blog-content {
+      padding: 15px;
+    }
+  }
+
+  /* line 135, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog.scss */
+  .single-blog:hover .thumb:after {
+    opacity: .7;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+
+  @media (max-width: 1199px) {
+    /* line 143, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog.scss */
+    .single-blog h4 {
+      transition: all 300ms linear 0s;
+      border-bottom: 1px solid #dfdfdf;
+      padding-bottom: 14px;
+      margin-bottom: 12px;
+    }
+    /* line 149, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog.scss */
+    .single-blog h4 a {
+      font-size: 18px;
+    }
+  }
+
+  /* line 157, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog.scss */
+  .full_image.single-blog {
+    position: relative;
+  }
+
+  /* line 160, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog.scss */
+  .full_image.single-blog .single-blog-content {
+    position: absolute;
+    left: 35px;
+    bottom: 0;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+
+  @media (min-width: 992px) {
+    /* line 160, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog.scss */
+    .full_image.single-blog .single-blog-content {
+      bottom: 100px;
+    }
+  }
+
+  /* line 179, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog.scss */
+  .full_image.single-blog h4 {
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    border-bottom: none;
+    padding-bottom: 5px;
+  }
+
+  /* line 185, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog.scss */
+  .full_image.single-blog a {
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  /* line 195, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog.scss */
+  .full_image.single-blog .date {
+    color: #fff;
+  }
+
+  /* line 200, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog.scss */
+  .full_image.single-blog:hover .single-blog-content {
+    opacity: 1;
+    visibility: visible;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+
+  /* End Blog Area css
+  ============================================================================================ */
+  /* Latest Blog Area css
+  ============================================================================================ */
+  /* line 224, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog.scss */
+  .l_blog_item .l_blog_text .date {
+    margin-top: 24px;
+    margin-bottom: 15px;
+  }
+
+  /* line 228, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog.scss */
+  .l_blog_item .l_blog_text .date a {
+    font-size: 12px;
+  }
+
+  /* line 234, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog.scss */
+  .l_blog_item .l_blog_text h4 {
+    font-size: 18px;
+    border-bottom: 1px solid #eeeeee;
+    margin-bottom: 0px;
+    padding-bottom: 20px;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+
+  /* line 247, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog.scss */
+  .l_blog_item .l_blog_text p {
+    margin-bottom: 0px;
+    padding-top: 20px;
+  }
+
+  /* End Latest Blog Area css
+  ============================================================================================ */
+  /* Causes Area css
+  ============================================================================================ */
+  /* line 263, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog.scss */
+  .causes_slider .owl-dots {
+    text-align: center;
+    margin-top: 80px;
+  }
+
+  /* line 267, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog.scss */
+  .causes_slider .owl-dots .owl-dot {
+    height: 14px;
+    width: 14px;
+    background: #eeeeee;
+    display: inline-block;
+    margin-right: 7px;
+  }
+
+  /* line 274, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog.scss */
+  .causes_slider .owl-dots .owl-dot:last-child {
+    margin-right: 0px;
+  }
+
+  /* line 285, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog.scss */
+  .causes_item {
+    background: #fff;
+  }
+
+  /* line 288, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog.scss */
+  .causes_item .causes_img {
+    position: relative;
+  }
+
+  /* line 291, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog.scss */
+  .causes_item .causes_img .c_parcent {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    left: 0px;
+    height: 3px;
+    background: rgba(255, 255, 255, 0.5);
+  }
+
+  /* line 299, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog.scss */
+  .causes_item .causes_img .c_parcent span {
+    width: 70%;
+    height: 3px;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+  }
+
+  /* line 307, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog.scss */
+  .causes_item .causes_img .c_parcent span:before {
+    content: "75%";
+    position: absolute;
+    right: -10px;
+    bottom: 0px;
+    color: #fff;
+    padding: 0px 5px;
+  }
+
+  /* line 320, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog.scss */
+  .causes_item .causes_text {
+    padding: 30px 35px 40px 30px;
+  }
+
+  /* line 323, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog.scss */
+  .causes_item .causes_text h4 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    cursor: pointer;
+  }
+
+  /* line 336, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog.scss */
+  .causes_item .causes_text p {
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 300;
+    margin-bottom: 0px;
+  }
+
+  /* line 346, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog.scss */
+  .causes_item .causes_bottom a {
+    width: 50%;
+    border: 1px solid;
+    text-align: center;
+    float: left;
+    line-height: 50px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+  /* line 358, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog.scss */
+  .causes_item .causes_bottom a + a {
+    border-color: #eeeeee;
+    background: #fff;
+    font-size: 14px;
+  }
+
+  /* End Causes Area css
+  ============================================================================================ */
+  /*================= latest_blog_area css =============*/
+  /* line 374, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog.scss */
+  .latest_blog_area {
+    background: #f9f9ff;
+  }
+
+  /* line 378, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog.scss */
+  .single-recent-blog-post {
+    margin-bottom: 30px;
+  }
+
+  /* line 381, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog.scss */
+  .single-recent-blog-post .thumb {
+    overflow: hidden;
+  }
+
+  /* line 384, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog.scss */
+  .single-recent-blog-post .thumb img {
+    transition: all 0.7s linear;
+  }
+
+  /* line 389, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog.scss */
+  .single-recent-blog-post .details {
+    padding-top: 30px;
+  }
+
+  /* line 392, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog.scss */
+  .single-recent-blog-post .details .sec_h4 {
+    line-height: 24px;
+    padding: 10px 0px 13px;
+    transition: all 0.3s linear;
+  }
+
+  /* line 403, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog.scss */
+  .single-recent-blog-post .date {
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+  }
+
+  /* line 410, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog.scss */
+  .single-recent-blog-post:hover img {
+    transform: scale(1.23) rotate(10deg);
+  }
+
+  /* line 417, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog.scss */
+  .tags .tag_btn {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 20px;
+    border: 1px solid #eeeeee;
+    display: inline-block;
+    padding: 1px 18px;
+    text-align: center;
+  }
+
+  /* line 431, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog.scss */
+  .tags .tag_btn + .tag_btn {
+    margin-left: 2px;
+  }
+
+  /*========= blog_categorie_area css ===========*/
+  /* line 438, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog.scss */
+  .blog_categorie_area {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  @media (min-width: 900px) {
+    /* line 438, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog.scss */
+    .blog_categorie_area {
+      padding-top: 80px;
+      padding-bottom: 80px;
+    }
+  }
+
+  @media (min-width: 1100px) {
+    /* line 438, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog.scss */
+    .blog_categorie_area {
+      padding-top: 120px;
+      padding-bottom: 120px;
+    }
+  }
+
+  /* line 454, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog.scss */
+  .categories_post {
+    position: relative;
+    text-align: center;
+    cursor: pointer;
+  }
+
+  /* line 459, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog.scss */
+  .categories_post img {
+    max-width: 100%;
+  }
+
+  /* line 463, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog.scss */
+  .categories_post .categories_details {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    background: rgba(34, 34, 34, 0.75);
+    color: #fff;
+    transition: all 0.3s linear;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* line 476, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog.scss */
+  .categories_post .categories_details h5 {
+    margin-bottom: 0px;
+    font-size: 18px;
+    line-height: 26px;
+    text-transform: uppercase;
+    color: #fff;
+    position: relative;
+  }
+
+  /* line 494, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog.scss */
+  .categories_post .categories_details p {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 26px;
+    margin-bottom: 0px;
+  }
+
+  /* line 501, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog.scss */
+  .categories_post .categories_details .border_line {
+    margin: 10px 0px;
+    background: #fff;
+    width: 100%;
+    height: 1px;
+  }
+
+  /* line 510, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog.scss */
+  .categories_post:hover .categories_details {
+    background: rgba(222, 99, 32, 0.85);
+  }
+
+  /*============ blog_left_sidebar css ==============*/
+  /* line 525, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog.scss */
+  .blog_item {
+    margin-bottom: 50px;
+  }
+
+  /* line 529, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog.scss */
+  .blog_details {
+    padding: 30px 0 20px 10px;
+    box-shadow: 0px 10px 20px 0px rgba(221, 221, 221, 0.3);
+  }
+
+  @media (min-width: 768px) {
+    /* line 529, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog.scss */
+    .blog_details {
+      padding: 60px 30px 35px 35px;
+    }
+  }
+
+  /* line 537, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog.scss */
+  .blog_details p {
+    margin-bottom: 30px;
+  }
+
+  /* line 541, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog.scss */
+  .blog_details a {
+    color: #ff8b23;
+  }
+
+  /* line 544, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog.scss */
+  .blog_details a:hover {
+    color: #009DFF;
+  }
+
+  /* line 549, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog.scss */
+  .blog_details h2 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 8px;
+  }
+
+  @media (min-width: 768px) {
+    /* line 549, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog.scss */
+    .blog_details h2 {
+      font-size: 24px;
+      margin-bottom: 15px;
+    }
+  }
+
+  /* line 563, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog.scss */
+  .blog-info-link li {
+    float: left;
+    font-size: 14px;
+  }
+
+  /* line 567, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog.scss */
+  .blog-info-link li a {
+    color: #999999;
+  }
+
+  /* line 571, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog.scss */
+  .blog-info-link li i,
+  .blog-info-link li span {
+    font-size: 13px;
+    margin-right: 5px;
+  }
+
+  /* line 577, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog.scss */
+  .blog-info-link li::after {
+    content: "|";
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  /* line 583, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog.scss */
+  .blog-info-link li:last-child::after {
+    display: none;
+  }
+
+  /* line 588, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog.scss */
+  .blog-info-link::after {
+    content: "";
+    display: block;
+    clear: both;
+    display: table;
+  }
+
+  /* line 596, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog.scss */
+  .blog_item_img {
+    position: relative;
+  }
+
+  /* line 599, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog.scss */
+  .blog_item_img .blog_item_date {
+    position: absolute;
+    bottom: -10px;
+    left: 10px;
+    display: block;
+    color: #fff;
+    background-color: #009DFF;
+    padding: 8px 15px;
+    border-radius: 5px;
+  }
+
+  @media (min-width: 768px) {
+    /* line 599, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog.scss */
+    .blog_item_img .blog_item_date {
+      bottom: -20px;
+      left: 40px;
+      padding: 13px 30px;
+    }
+  }
+
+  /* line 615, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog.scss */
+  .blog_item_img .blog_item_date h3 {
+    font-size: 22px;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 0;
+    line-height: 1.2;
+  }
+
+  @media (min-width: 768px) {
+    /* line 615, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog.scss */
+    .blog_item_img .blog_item_date h3 {
+      font-size: 30px;
+    }
+  }
+
+  /* line 627, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog.scss */
+  .blog_item_img .blog_item_date p {
+    font-size: 18px;
+    margin-bottom: 0;
+    color: #fff;
+  }
+
+  @media (min-width: 768px) {
+    /* line 627, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog.scss */
+    .blog_item_img .blog_item_date p {
+      font-size: 18px;
+    }
+  }
+
+  /* line 647, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog.scss */
+  .blog_right_sidebar .widget_title {
+    font-size: 20px;
+    margin-bottom: 40px;
+  }
+
+  /* line 652, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog.scss */
+  .blog_right_sidebar .widget_title::after {
+    content: "";
+    display: block;
+    padding-top: 15px;
+    border-bottom: 1px solid #f0e9ff;
+  }
+
+  /* line 660, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog.scss */
+  .blog_right_sidebar .single_sidebar_widget {
+    background: #b497ef;
+    padding: 30px;
+    margin-bottom: 30px;
+  }
+
+  /* line 664, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog.scss */
+  .blog_right_sidebar .single_sidebar_widget .btn_1 {
+    margin-top: 0px;
+  }
+
+  /* line 672, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog.scss */
+  .blog_right_sidebar .search_widget .form-control {
+    height: 50px;
+    border-color: #f0e9ff;
+    font-size: 13px;
+    color: #999999;
+    padding-left: 20px;
+    border-radius: 0;
+    border-right: 0;
+  }
+
+  /* line 681, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog.scss */
+  .blog_right_sidebar .search_widget .form-control::placeholder {
+    color: #999999;
+  }
+
+  /* line 685, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog.scss */
+  .blog_right_sidebar .search_widget .form-control:focus {
+    border-color: #f0e9ff;
+    outline: 0;
+    box-shadow: none;
+  }
+
+  /* line 694, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog.scss */
+  .blog_right_sidebar .search_widget .input-group button {
+    background: #fff;
+    border-left: 0;
+    border: 1px solid #f0e9ff;
+    padding: 4px 15px;
+    border-left: 0;
+  }
+
+  /* line 701, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog.scss */
+  .blog_right_sidebar .search_widget .input-group button i,
+  .blog_right_sidebar .search_widget .input-group button span {
+    font-size: 14px;
+    color: #999999;
+  }
+
+  /* line 713, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog.scss */
+  .blog_right_sidebar .newsletter_widget .form-control {
+    height: 50px;
+    border-color: #f0e9ff;
+    font-size: 13px;
+    color: #999999;
+    padding-left: 20px;
+    border-radius: 0;
+  }
+
+  /* line 722, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog.scss */
+  .blog_right_sidebar .newsletter_widget .form-control::placeholder {
+    color: #999999;
+  }
+
+  /* line 726, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog.scss */
+  .blog_right_sidebar .newsletter_widget .form-control:focus {
+    border-color: #f0e9ff;
+    outline: 0;
+    box-shadow: none;
+  }
+
+  /* line 735, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog.scss */
+  .blog_right_sidebar .newsletter_widget .input-group button {
+    background: #fff;
+    border-left: 0;
+    border: 1px solid #f0e9ff;
+    padding: 4px 15px;
+    border-left: 0;
+  }
+
+  /* line 742, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog.scss */
+  .blog_right_sidebar .newsletter_widget .input-group button i,
+  .blog_right_sidebar .newsletter_widget .input-group button span {
+    font-size: 14px;
+    color: #999999;
+  }
+
+  /* line 755, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog.scss */
+  .blog_right_sidebar .post_category_widget .cat-list li {
+    border-bottom: 1px solid #f0e9ff;
+    transition: all 0.3s ease 0s;
+    padding-bottom: 12px;
+  }
+
+  /* line 760, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog.scss */
+  .blog_right_sidebar .post_category_widget .cat-list li:last-child {
+    border-bottom: 0;
+  }
+
+  /* line 764, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog.scss */
+  .blog_right_sidebar .post_category_widget .cat-list li a {
+    font-size: 14px;
+    line-height: 20px;
+    color: #888888;
+  }
+
+  /* line 769, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog.scss */
+  .blog_right_sidebar .post_category_widget .cat-list li a p {
+    margin-bottom: 0px;
+  }
+
+  /* line 774, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog.scss */
+  .blog_right_sidebar .post_category_widget .cat-list li + li {
+    padding-top: 15px;
+  }
+
+  /* line 791, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog.scss */
+  .blog_right_sidebar .popular_post_widget .post_item .media-body {
+    justify-content: center;
+    align-self: center;
+    padding-left: 20px;
+  }
+
+  /* line 796, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog.scss */
+  .blog_right_sidebar .popular_post_widget .post_item .media-body h3 {
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 6px;
+    transition: all 0.3s linear;
+  }
+
+  /* line 807, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog.scss */
+  .blog_right_sidebar .popular_post_widget .post_item .media-body a:hover {
+    color: #fff;
+  }
+
+  /* line 813, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog.scss */
+  .blog_right_sidebar .popular_post_widget .post_item .media-body p {
+    font-size: 14px;
+    line-height: 21px;
+    margin-bottom: 0px;
+  }
+
+  /* line 820, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog.scss */
+  .blog_right_sidebar .popular_post_widget .post_item + .post_item {
+    margin-top: 20px;
+  }
+
+  /* line 828, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog.scss */
+  .blog_right_sidebar .tag_cloud_widget ul li {
+    display: inline-block;
+  }
+
+  /* line 831, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog.scss */
+  .blog_right_sidebar .tag_cloud_widget ul li a {
+    display: inline-block;
+    border: 1px solid #eeeeee;
+    background: #fff;
+    padding: 4px 20px;
+    margin-bottom: 8px;
+    margin-right: 3px;
+    transition: all 0.3s ease 0s;
+    color: #888888;
+    font-size: 13px;
+  }
+
+  /* line 842, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog.scss */
+  .blog_right_sidebar .tag_cloud_widget ul li a:hover {
+    background: #009DFF;
+    color: #fff !important;
+    -webkit-text-fill-color: #fff;
+    text-decoration: none;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+
+  /* line 857, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog.scss */
+  .blog_right_sidebar .instagram_feeds .instagram_row {
+    display: flex;
+    margin-right: -6px;
+    margin-left: -6px;
+  }
+
+  /* line 863, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog.scss */
+  .blog_right_sidebar .instagram_feeds .instagram_row li {
+    width: 33.33%;
+    float: left;
+    padding-right: 6px;
+    padding-left: 6px;
+    margin-bottom: 15px;
+  }
+
+  /* line 963, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog.scss */
+  .blog_right_sidebar .br {
+    width: 100%;
+    height: 1px;
+    background: #eeeeee;
+    margin: 30px 0px;
+  }
+
+  /* line 984, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog.scss */
+  .blog-pagination {
+    margin-top: 80px;
+  }
+
+  /* line 988, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog.scss */
+  .blog-pagination .page-link {
+    font-size: 14px;
+    position: relative;
+    display: block;
+    padding: 0;
+    text-align: center;
+    margin-left: -1px;
+    line-height: 45px;
+    width: 45px;
+    height: 45px;
+    border-radius: 0 !important;
+    color: #8a8a8a;
+    border: 1px solid #f0e9ff;
+    margin-right: 10px;
+  }
+
+  /* line 1005, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog.scss */
+  .blog-pagination .page-link i,
+  .blog-pagination .page-link span {
+    font-size: 13px;
+  }
+
+  /* line 1017, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog.scss */
+  .blog-pagination .page-item.active .page-link {
+    background-color: #fbf9ff;
+    border-color: #f0e9ff;
+    color: #888888;
+  }
+
+  /* line 1024, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog.scss */
+  .blog-pagination .page-item:last-child .page-link {
+    margin-right: 0;
+  }
+
+  /*============ Start Blog Single Styles  =============*/
+  /* line 1049, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog.scss */
+  .single-post-area .blog_details {
+    box-shadow: none;
+    padding: 0;
+  }
+
+  /* line 1054, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog.scss */
+  .single-post-area .social-links {
+    padding-top: 10px;
+  }
+
+  /* line 1057, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog.scss */
+  .single-post-area .social-links li {
+    display: inline-block;
+    margin-bottom: 10px;
+  }
+
+  /* line 1061, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog.scss */
+  .single-post-area .social-links li a {
+    color: #cccccc;
+    padding: 7px;
+    font-size: 14px;
+    transition: all 0.2s linear;
+  }
+
+  /* line 1074, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog.scss */
+  .single-post-area .blog_details {
+    padding-top: 26px;
+  }
+
+  /* line 1077, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog.scss */
+  .single-post-area .blog_details p {
+    margin-bottom: 20px;
+    font-size: 15px;
+  }
+
+  /* line 1087, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog.scss */
+  .single-post-area .quote-wrapper {
+    background: rgba(130, 139, 178, 0.1);
+    padding: 15px;
+    line-height: 1.733;
+    color: #888888;
+    font-style: italic;
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+
+  @media (min-width: 768px) {
+    /* line 1087, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog.scss */
+    .single-post-area .quote-wrapper {
+      padding: 30px;
+    }
+  }
+
+  /* line 1101, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog.scss */
+  .single-post-area .quotes {
+    background: #fff;
+    padding: 15px 15px 15px 20px;
+    border-left: 2px solid;
+  }
+
+  @media (min-width: 768px) {
+    /* line 1101, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog.scss */
+    .single-post-area .quotes {
+      padding: 25px 25px 25px 30px;
+    }
+  }
+
+  /* line 1111, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog.scss */
+  .single-post-area .arrow {
+    position: absolute;
+  }
+
+  /* line 1114, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog.scss */
+  .single-post-area .arrow .lnr {
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  /* line 1121, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog.scss */
+  .single-post-area .thumb .overlay-bg {
+    background: rgba(0, 0, 0, 0.8);
+  }
+
+  /* line 1126, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog.scss */
+  .single-post-area .navigation-top {
+    padding-top: 15px;
+    border-top: 1px solid #f0e9ff;
+  }
+
+  /* line 1130, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog.scss */
+  .single-post-area .navigation-top p {
+    margin-bottom: 0;
+  }
+
+  /* line 1134, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog.scss */
+  .single-post-area .navigation-top .like-info {
+    font-size: 14px;
+  }
+
+  /* line 1137, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog.scss */
+  .single-post-area .navigation-top .like-info i,
+  .single-post-area .navigation-top .like-info span {
+    font-size: 16px;
+    margin-right: 5px;
+  }
+
+  /* line 1144, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog.scss */
+  .single-post-area .navigation-top .comment-count {
+    font-size: 14px;
+  }
+
+  /* line 1147, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog.scss */
+  .single-post-area .navigation-top .comment-count i,
+  .single-post-area .navigation-top .comment-count span {
+    font-size: 16px;
+    margin-right: 5px;
+  }
+
+  /* line 1156, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog.scss */
+  .single-post-area .navigation-top .social-icons li {
+    display: inline-block;
+    margin-right: 15px;
+  }
+
+  /* line 1160, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog.scss */
+  .single-post-area .navigation-top .social-icons li:last-child {
+    margin: 0;
+  }
+
+  /* line 1164, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog.scss */
+  .single-post-area .navigation-top .social-icons li i,
+  .single-post-area .navigation-top .social-icons li span {
+    font-size: 14px;
+    color: #999999;
+  }
+
+  /* line 1182, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog.scss */
+  .single-post-area .blog-author {
+    padding: 40px 30px;
+    background: #fbf9ff;
+    margin-top: 50px;
+  }
+
+  @media (max-width: 600px) {
+    /* line 1182, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog.scss */
+    .single-post-area .blog-author {
+      padding: 20px 8px;
+    }
+  }
+
+  /* line 1191, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog.scss */
+  .single-post-area .blog-author img {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    margin-right: 30px;
+  }
+
+  @media (max-width: 600px) {
+    /* line 1191, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog.scss */
+    .single-post-area .blog-author img {
+      margin-right: 15px;
+      width: 45px;
+      height: 45px;
+    }
+  }
+
+  /* line 1204, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog.scss */
+  .single-post-area .blog-author a {
+    display: inline-block;
+  }
+
+  /* line 1208, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog.scss */
+  .single-post-area .blog-author a:hover {
+    color: #009DFF;
+  }
+
+  /* line 1213, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog.scss */
+  .single-post-area .blog-author p {
+    margin-bottom: 0;
+    font-size: 15px;
+  }
+
+  /* line 1218, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog.scss */
+  .single-post-area .blog-author h4 {
+    font-size: 16px;
+  }
+
+  /* line 1225, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog.scss */
+  .single-post-area .navigation-area {
+    border-bottom: 1px solid #eee;
+    padding-bottom: 30px;
+    margin-top: 55px;
+  }
+
+  /* line 1230, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog.scss */
+  .single-post-area .navigation-area p {
+    margin-bottom: 0px;
+  }
+
+  /* line 1234, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog.scss */
+  .single-post-area .navigation-area h4 {
+    font-size: 18px;
+    line-height: 25px;
+  }
+
+  /* line 1240, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog.scss */
+  .single-post-area .navigation-area .nav-left {
+    text-align: left;
+  }
+
+  /* line 1243, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog.scss */
+  .single-post-area .navigation-area .nav-left .thumb {
+    margin-right: 20px;
+    background: #000;
+  }
+
+  /* line 1247, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog.scss */
+  .single-post-area .navigation-area .nav-left .thumb img {
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+
+  /* line 1252, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog.scss */
+  .single-post-area .navigation-area .nav-left .lnr {
+    margin-left: 20px;
+    opacity: 0;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+
+  /* line 1259, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog.scss */
+  .single-post-area .navigation-area .nav-left:hover .lnr {
+    opacity: 1;
+  }
+
+  /* line 1264, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog.scss */
+  .single-post-area .navigation-area .nav-left:hover .thumb img {
+    opacity: .5;
+  }
+
+  @media (max-width: 767px) {
+    /* line 1240, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog.scss */
+    .single-post-area .navigation-area .nav-left {
+      margin-bottom: 30px;
+    }
+  }
+
+  /* line 1275, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog.scss */
+  .single-post-area .navigation-area .nav-right {
+    text-align: right;
+  }
+
+  /* line 1278, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog.scss */
+  .single-post-area .navigation-area .nav-right .thumb {
+    margin-left: 20px;
+    background: #000;
+  }
+
+  /* line 1282, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog.scss */
+  .single-post-area .navigation-area .nav-right .thumb img {
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+
+  /* line 1287, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog.scss */
+  .single-post-area .navigation-area .nav-right .lnr {
+    margin-right: 20px;
+    opacity: 0;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+
+  /* line 1294, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog.scss */
+  .single-post-area .navigation-area .nav-right:hover .lnr {
+    opacity: 1;
+  }
+
+  /* line 1299, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog.scss */
+  .single-post-area .navigation-area .nav-right:hover .thumb img {
+    opacity: .5;
+  }
+
+  @media (max-width: 991px) {
+    /* line 1307, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog.scss */
+    .single-post-area .sidebar-widgets {
+      padding-bottom: 0px;
+    }
+  }
+
+  /* line 1314, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog.scss */
+  .comments-area {
+    background: transparent;
+    border-top: 1px solid #eee;
+    padding: 45px 0;
+    margin-top: 50px;
+  }
+
+  @media (max-width: 414px) {
+    /* line 1314, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog.scss */
+    .comments-area {
+      padding: 50px 8px;
+    }
+  }
+
+  /* line 1325, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog.scss */
+  .comments-area h4 {
+    margin-bottom: 35px;
+    font-size: 18px;
+  }
+
+  /* line 1332, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog.scss */
+  .comments-area h5 {
+    font-size: 16px;
+    margin-bottom: 0px;
+  }
+
+  /* line 1341, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog.scss */
+  .comments-area .comment-list {
+    padding-bottom: 48px;
+  }
+
+  /* line 1344, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog.scss */
+  .comments-area .comment-list:last-child {
+    padding-bottom: 0px;
+  }
+
+  /* line 1348, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog.scss */
+  .comments-area .comment-list.left-padding {
+    padding-left: 25px;
+  }
+
+  @media (max-width: 413px) {
+    /* line 1354, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog.scss */
+    .comments-area .comment-list .single-comment h5 {
+      font-size: 12px;
+    }
+    /* line 1358, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog.scss */
+    .comments-area .comment-list .single-comment .date {
+      font-size: 11px;
+    }
+    /* line 1362, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog.scss */
+    .comments-area .comment-list .single-comment .comment {
+      font-size: 10px;
+    }
+  }
+
+  /* line 1369, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog.scss */
+  .comments-area .thumb {
+    margin-right: 20px;
+  }
+
+  /* line 1372, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog.scss */
+  .comments-area .thumb img {
+    width: 70px;
+    border-radius: 50%;
+  }
+
+  /* line 1378, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog.scss */
+  .comments-area .date {
+    font-size: 14px;
+    color: #999999;
+    margin-bottom: 0;
+    margin-left: 20px;
+  }
+
+  /* line 1385, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog.scss */
+  .comments-area .comment {
+    margin-bottom: 10px;
+    color: #777777;
+    font-size: 15px;
+  }
+
+  /* line 1391, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog.scss */
+  .comments-area .btn-reply {
+    background-color: transparent;
+    color: #888888;
+    padding: 5px 18px;
+    font-size: 14px;
+    display: block;
+    font-weight: 400;
+  }
+
+  /* line 1408, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog.scss */
+  .comment-form {
+    border-top: 1px solid #eee;
+    padding-top: 45px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+  }
+
+  /* line 1416, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog.scss */
+  .comment-form .form-group {
+    margin-bottom: 30px;
+  }
+
+  /* line 1420, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog.scss */
+  .comment-form h4 {
+    margin-bottom: 40px;
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  /* line 1428, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog.scss */
+  .comment-form .name {
+    padding-left: 0px;
+  }
+
+  @media (max-width: 767px) {
+    /* line 1428, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog.scss */
+    .comment-form .name {
+      padding-right: 0px;
+      margin-bottom: 1rem;
+    }
+  }
+
+  /* line 1437, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog.scss */
+  .comment-form .email {
+    padding-right: 0px;
+  }
+
+  @media (max-width: 991px) {
+    /* line 1437, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog.scss */
+    .comment-form .email {
+      padding-left: 0px;
+    }
+  }
+
+  /* line 1445, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog.scss */
+  .comment-form .form-control {
+    border: 1px solid #f0e9ff;
+    border-radius: 5px;
+    height: 48px;
+    padding-left: 18px;
+    font-size: 13px;
+    background: transparent;
+  }
+
+  /* line 1453, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog.scss */
+  .comment-form .form-control:focus {
+    outline: 0;
+    box-shadow: none;
+  }
+
+  /* line 1458, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog.scss */
+  .comment-form .form-control::placeholder {
+    font-weight: 300;
+    color: #999999;
+  }
+
+  /* line 1463, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog.scss */
+  .comment-form .form-control::placeholder {
+    color: #777777;
+  }
+
+  /* line 1468, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog.scss */
+  .comment-form textarea {
+    padding-top: 18px;
+    border-radius: 12px;
+    height: 100% !important;
+  }
+
+  /* line 1474, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog.scss */
+  .comment-form ::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    font-size: 13px;
+    color: #777;
+  }
+
+  /* line 1480, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog.scss */
+  .comment-form ::-moz-placeholder {
+    /* Firefox 19+ */
+    font-size: 13px;
+    color: #777;
+  }
+
+  /* line 1486, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog.scss */
+  .comment-form :-ms-input-placeholder {
+    /* IE 10+ */
+    font-size: 13px;
+    color: #777;
+  }
+
+  /* line 1492, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog.scss */
+  .comment-form :-moz-placeholder {
+    /* Firefox 18- */
+    font-size: 13px;
+    color: #777;
+  }
+
+  /*============ End Blog Single Styles  =============*/
+  /**************** blog part css start ****************/
+  /* line 2, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog_part.scss */
+  .blog_part {
+    margin-bottom: 140px;
+  }
+
+  @media (max-width: 576px) {
+    /* line 2, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog_part.scss */
+    .blog_part {
+      margin-bottom: 0px;
+      padding: 0px 0px 70px;
+    }
+  }
+
+  @media only screen and (min-width: 576px) and (max-width: 767px) {
+    /* line 2, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog_part.scss */
+    .blog_part {
+      margin-bottom: 0px;
+      padding: 0px 0px 70px;
+    }
+  }
+
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    /* line 2, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog_part.scss */
+    .blog_part {
+      margin-bottom: 0px;
+      padding: 0px 0px 70px;
+    }
+  }
+
+  /* line 19, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog_part.scss */
+  .blog_part .blog_right_sidebar .widget_title {
+    font-size: 20px;
+    margin-bottom: 40px;
+    font-style: inherit !important;
+  }
+
+  @media (max-width: 576px) {
+    /* line 24, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog_part.scss */
+    .blog_part .single-home-blog {
+      margin-bottom: 140px;
+      margin-top: 20px;
+    }
+  }
+
+  @media only screen and (min-width: 576px) and (max-width: 767px) {
+    /* line 24, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog_part.scss */
+    .blog_part .single-home-blog {
+      margin-bottom: 140px;
+      margin-top: 20px;
+    }
+  }
+
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    /* line 24, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog_part.scss */
+    .blog_part .single-home-blog {
+      margin-bottom: 140px;
+      margin-top: 20px;
+    }
+  }
+
+  /* line 40, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog_part.scss */
+  .blog_part .single-home-blog .card-img-top {
+    border-radius: 0px;
+  }
+
+  /* line 43, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog_part.scss */
+  .blog_part .single-home-blog .card {
+    border: 0px solid transparent;
+    border-radius: 0px;
+    background-color: transparent;
+    position: relative;
+  }
+
+  /* line 48, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog_part.scss */
+  .blog_part .single-home-blog .card .card-body {
+    padding: 25px 10px 29px 40px;
+    background-color: #fff;
+    position: absolute;
+    left: 20px;
+    bottom: -140px;
+    box-shadow: -7.552px 9.326px 20px 0px rgba(1, 84, 85, 0.1);
+    border-radius: 10px;
+  }
+
+  @media (max-width: 576px) {
+    /* line 48, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog_part.scss */
+    .blog_part .single-home-blog .card .card-body {
+      padding: 15px;
+      left: 10px;
+      bottom: -140px;
+    }
+  }
+
+  @media only screen and (min-width: 576px) and (max-width: 767px) {
+    /* line 48, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog_part.scss */
+    .blog_part .single-home-blog .card .card-body {
+      padding: 15px;
+      left: 10px;
+      bottom: -140px;
+    }
+  }
+
+  @media only screen and (min-width: 992px) and (max-width: 1200px) {
+    /* line 48, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog_part.scss */
+    .blog_part .single-home-blog .card .card-body {
+      padding: 20px;
+    }
+  }
+
+  /* line 72, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog_part.scss */
+  .blog_part .single-home-blog .card .card-body a {
+    color: #009DFF;
+    text-transform: uppercase;
+    -webkit-transition: 0.8s;
+    transition: 0.8s;
+  }
+
+  /* line 76, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog_part.scss */
+  .blog_part .single-home-blog .card .card-body a:hover {
+    background: -webkit-linear-gradient(131deg, #ff7e5f 0%, #feb47b 99%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  /* line 83, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog_part.scss */
+  .blog_part .single-home-blog .card .dot {
+    position: relative;
+    padding-left: 20px;
+  }
+
+  /* line 86, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog_part.scss */
+  .blog_part .single-home-blog .card .dot:after {
+    position: absolute;
+    content: "";
+    width: 10px;
+    height: 10px;
+    top: 5px;
+    left: 0;
+    background-color: #009DFF;
+    border-radius: 50%;
+  }
+
+  /* line 97, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog_part.scss */
+  .blog_part .single-home-blog .card span {
+    color: #8a8a8a;
+    margin-bottom: 10px;
+    display: inline-block;
+    margin-top: 10px;
+  }
+
+  @media (max-width: 576px) {
+    /* line 97, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog_part.scss */
+    .blog_part .single-home-blog .card span {
+      margin-bottom: 5px;
+      margin-top: 5px;
+    }
+  }
+
+  @media only screen and (min-width: 576px) and (max-width: 767px) {
+    /* line 97, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog_part.scss */
+    .blog_part .single-home-blog .card span {
+      margin-bottom: 5px;
+      margin-top: 5px;
+    }
+  }
+
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    /* line 97, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog_part.scss */
+    .blog_part .single-home-blog .card span {
+      margin-bottom: 5px;
+      margin-top: 5px;
+    }
+  }
+
+  @media only screen and (min-width: 992px) and (max-width: 1200px) {
+    /* line 97, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog_part.scss */
+    .blog_part .single-home-blog .card span {
+      margin-bottom: 5px;
+      margin-top: 5px;
+    }
+  }
+
+  /* line 119, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog_part.scss */
+  .blog_part .single-home-blog .card h5 {
+    font-weight: 600;
+    line-height: 1.5;
+    font-size: 20px;
+    -webkit-transition: 0.8s;
+    transition: 0.8s;
+    text-transform: capitalize;
+    margin-bottom: 22px;
+  }
+
+  @media (max-width: 576px) {
+    /* line 119, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog_part.scss */
+    .blog_part .single-home-blog .card h5 {
+      margin-bottom: 10px;
+    }
+  }
+
+  @media only screen and (min-width: 576px) and (max-width: 767px) {
+    /* line 119, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog_part.scss */
+    .blog_part .single-home-blog .card h5 {
+      margin-bottom: 10px;
+      font-size: 16px;
+    }
+  }
+
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    /* line 119, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog_part.scss */
+    .blog_part .single-home-blog .card h5 {
+      margin-bottom: 10px;
+    }
+  }
+
+  @media only screen and (min-width: 992px) and (max-width: 1200px) {
+    /* line 119, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog_part.scss */
+    .blog_part .single-home-blog .card h5 {
+      margin-bottom: 10px;
+      font-size: 18px;
+    }
+  }
+
+  /* line 140, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog_part.scss */
+  .blog_part .single-home-blog .card h5:hover {
+    -webkit-transition: 0.8s;
+    transition: 0.8s;
+    background: -webkit-linear-gradient(131deg, #feb47b 0%, #ff7e5f 99%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-animation: 1s;
+  }
+
+  /* line 150, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog_part.scss */
+  .blog_part .single-home-blog .card ul li {
+    display: inline-block;
+    color: #8a8a8a;
+    margin-right: 14px;
+  }
+
+  @media (max-width: 576px) {
+    /* line 150, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog_part.scss */
+    .blog_part .single-home-blog .card ul li {
+      margin-right: 10px;
+    }
+  }
+
+  @media only screen and (min-width: 576px) and (max-width: 767px) {
+    /* line 150, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog_part.scss */
+    .blog_part .single-home-blog .card ul li {
+      margin-right: 10px;
+    }
+  }
+
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    /* line 150, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog_part.scss */
+    .blog_part .single-home-blog .card ul li {
+      margin-right: 10px;
+    }
+  }
+
+  @media only screen and (min-width: 992px) and (max-width: 1200px) {
+    /* line 150, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog_part.scss */
+    .blog_part .single-home-blog .card ul li {
+      margin-right: 10px;
+    }
+  }
+
+  /* line 166, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog_part.scss */
+  .blog_part .single-home-blog .card ul li span {
+    margin-right: 10px;
+    font-size: 12px;
+  }
+
+  /*# sourceMappingURL=style.css.map */
